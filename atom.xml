@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-24T01:52:28.604Z</updated>
+  <updated>2020-02-25T05:19:30.988Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo博客提交谷歌收录</title>
+    <link href="http://yoursite.com/2020/02/25/seo/"/>
+    <id>http://yoursite.com/2020/02/25/seo/</id>
+    <published>2020-02-25T04:50:57.715Z</published>
+    <updated>2020-02-25T05:19:30.988Z</updated>
+    
+    <content type="html"><![CDATA[<p>搭建出自己的网站之后肯定是想让别人都能看见，能搜索到。但是如果只是被动的等待搜索引擎的蜘蛛爬过来，那是个很漫长的过程（当然谷歌很快，即使你不提交，也会发现很多被收录。<br>但是提交一下肯定会更快。<br>针对本篇教程，你所需要准备的东西有</p><ol><li>谷歌账号</li><li>ctrl + cv的能力</li></ol><p>这里我们不再提谷歌账号的注册，默认你已经有了账号。因为注册账号确实很简单。<br>然后我们打开谷歌的<a href="https://search.google.com/search-console/welcome?utm_source=about-page" target="_blank" rel="noopener">Google Search Console</a><br><img src="https://i.loli.net/2020/02/25/HGzWXfdYKOvinUw.png" alt=""><br>如果你有自己的域名，那你直接在网域下输入你的域名然后进行验证。<br>但是如果你是跟我一样用的github的域名的话，那就把你的首页链接复制粘贴到网址前缀下面。比如说我的，就是这样<br><img src="https://i.loli.net/2020/02/25/lE67dZrwJBCsRfg.png" alt=""><br>然后会让你验证，验证方式共有四种<br><img src="https://i.loli.net/2020/02/25/NVvyhmS8uDL7zpG.png" alt=""></p><ol><li><p>HTML文件<br>就是会让你下载一个html文件，然后让你将HTML文件上传至您的网站。我们需要把这个html放在博客根目录的<code>source</code>文件夹，并在html文件最上面添加上</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li><li><p>HTML标记<br>个人认为这个是最方便的。你只需要在你的网页head中添加一段代码即可。针对于我们的操作就是在themes文件夹中找到对应的关于head的渲染文件，比如说我的是<code>head.ejs</code>。然后再head标记中间把给你的HTML标记复制粘贴进去即可。</p></li><li><p>GA Or GTM<br>这两个基本一样就是让你用别的绑定自己站点的账号同步数据。就不细说了。</p></li><li><p>域名提供商<br>这个如果你是自己的域名，去域名解析里面添加一条记录即可，</p></li></ol><p>无论你选择什么方式，验证成功之后。这篇教程就结束了。</p><p>最后吹一下谷歌的收录速度，昨天提交的收录，今天已经把我的已经有的所有页面都收了，比某度强的可不是一点半点啊2333<br><img src="https://i.loli.net/2020/02/25/BzMlUX94nkWq31D.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;搭建出自己的网站之后肯定是想让别人都能看见，能搜索到。但是如果只是被动的等待搜索引擎的蜘蛛爬过来，那是个很漫长的过程（当然谷歌很快，即使你不提交，也会发现很多被收录。&lt;br&gt;但是提交一下肯定会更快。&lt;br&gt;针对本篇教程，你所需要准备的东西有&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;谷歌账
+      
+    
+    </summary>
+    
+    
+      <category term="建站" scheme="http://yoursite.com/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>git上传文件至Github出现问题Permission to xxx denied to xxx.</title>

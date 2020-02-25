@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hexo博客提交谷歌收录 - CodeMaster</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Code,"> 
+    <meta name="description" content="搭建出自己的网站之后肯定是想让别人都能看见，能搜索到。但是如果只是被动的等待搜索引擎的蜘蛛爬过来，那是个很漫长的过程（当然谷歌很快，即使你不提交，也会发现很多被收录。但是提交一下肯定会更快。针对本篇,"> 
+    <meta name="author" content="CodeMaster"> 
+    <link rel="alternative" href="atom.xml" title="CodeMaster" type="application/atom+xml"> 
+    <link rel="icon" href="/img/cover.jpg"> 
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">CodeMaster</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="/" data-url="http://yoursite.com"></a>
+    <!-- <div title="播放/暂停" class="icon-play"></div> -->
+    <h3 class="subtitle">Hexo博客提交谷歌收录</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <!-- <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div> -->
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Hexo博客提交谷歌收录</h1>
+        <div class="stuff">
+            <span>二月 25, 2020</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p>搭建出自己的网站之后肯定是想让别人都能看见，能搜索到。但是如果只是被动的等待搜索引擎的蜘蛛爬过来，那是个很漫长的过程（当然谷歌很快，即使你不提交，也会发现很多被收录。<br>但是提交一下肯定会更快。<br>针对本篇教程，你所需要准备的东西有</p>
+<ol>
+<li>谷歌账号</li>
+<li>ctrl + cv的能力</li>
+</ol>
+<p>这里我们不再提谷歌账号的注册，默认你已经有了账号。因为注册账号确实很简单。<br>然后我们打开谷歌的<a href="https://search.google.com/search-console/welcome?utm_source=about-page" target="_blank" rel="noopener">Google Search Console</a><br><img src="https://i.loli.net/2020/02/25/HGzWXfdYKOvinUw.png" alt=""><br>如果你有自己的域名，那你直接在网域下输入你的域名然后进行验证。<br>但是如果你是跟我一样用的github的域名的话，那就把你的首页链接复制粘贴到网址前缀下面。比如说我的，就是这样<br><img src="https://i.loli.net/2020/02/25/lE67dZrwJBCsRfg.png" alt=""><br>然后会让你验证，验证方式共有四种<br><img src="https://i.loli.net/2020/02/25/NVvyhmS8uDL7zpG.png" alt=""></p>
+<ol>
+<li><p>HTML文件<br>就是会让你下载一个html文件，然后让你将HTML文件上传至您的网站。我们需要把这个html放在博客根目录的<code>source</code>文件夹，并在html文件最上面添加上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>HTML标记<br>个人认为这个是最方便的。你只需要在你的网页head中添加一段代码即可。针对于我们的操作就是在themes文件夹中找到对应的关于head的渲染文件，比如说我的是<code>head.ejs</code>。然后再head标记中间把给你的HTML标记复制粘贴进去即可。</p>
+</li>
+<li><p>GA Or GTM<br>这两个基本一样就是让你用别的绑定自己站点的账号同步数据。就不细说了。</p>
+</li>
+<li><p>域名提供商<br>这个如果你是自己的域名，去域名解析里面添加一条记录即可，</p>
+</li>
+</ol>
+<p>无论你选择什么方式，验证成功之后。这篇教程就结束了。</p>
+<p>最后吹一下谷歌的收录速度，昨天提交的收录，今天已经把我的已经有的所有页面都收了，比某度强的可不是一点半点啊2333<br><img src="https://i.loli.net/2020/02/25/BzMlUX94nkWq31D.png" alt=""></p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="http://domain.com/awesome.mp3">
+            </audio>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci='2aae7016215888204fe0'
+        data-cs='a8e4abca71027dc91ed92b4a1ea19599a2db8709'
+        data-r='comment'
+        data-o='CodeMaster233'
+        data-a='CodeMaster233'
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+    <script type="text/javascript" src="/js/linkcard.js"></script>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
