@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2020-02-25T05:19:30.988Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://codemaster233.github.io/"/>
+  <updated>2020-02-26T04:28:04.118Z</updated>
+  <id>https://codemaster233.github.io/</id>
   
   <author>
     <name>CodeMaster</name>
@@ -17,9 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo添加随机文章功能</title>
+    <link href="https://codemaster233.github.io/2020/02/26/random/"/>
+    <id>https://codemaster233.github.io/2020/02/26/random/</id>
+    <published>2020-02-26T04:12:07.452Z</published>
+    <updated>2020-02-26T04:28:04.118Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>如果有些小伙伴逛着逛着来到了你的博客，但是又懒得一篇一篇翻又想了解你。那么，这个时候如果可以随机打开一篇文章任其浏览，效果肯定是不错的。</p></blockquote><p>在网上搜了一下，没想到还真的有这个插件。插件叫<code>hexo-generator-random</code><br>奉上Github地址: <a href="https://github.com/Drew233/hexo-generator-random" target="_blank" rel="noopener">https://github.com/Drew233/hexo-generator-random</a></p><p>我在这里分享一下我的安装历程。根据作者所描述的，我选择使用npm进行安装<br>首先安装依赖</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install object-assign</span><br></pre></td></tr></table></figure><p><img src="https://i.loli.net/2020/02/26/FIqih5abgB7jnXD.png" alt=""></p><p>依赖安装完成后安装插件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-random --save</span><br></pre></td></tr></table></figure><p><img src="https://i.loli.net/2020/02/26/KsGcnUgt1rXRk4b.png" alt=""></p><p>安装完成之后重新<code>hexo d</code>一下，你会发现在public文件夹下生成了一个名为<code>random.html</code>的文件</p><p><img src="https://i.loli.net/2020/02/26/QXFV5K89vEhAmZ3.png" alt=""></p><p>这个html文件就是实现随机文章的关键。访问这个html就可以了。<br>比如我的主题，在<code>../themes/_config.yml</code>中配置菜单项</p><p><img src="https://i.loli.net/2020/02/26/OxpMRm35gfC4G2r.png" alt=""></p><p>然后就可以找到对应的菜单项访问就好了</p><p><img src="https://i.loli.net/2020/02/26/d1KxIYz5OABQhcm.png" alt="__X8_F27TMWJD563ZP7BZ4F.png"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;如果有些小伙伴逛着逛着来到了你的博客，但是又懒得一篇一篇翻又想了解你。那么，这个时候如果可以随机打开一篇文章任其浏览，效果肯定是不错的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在网上搜了一下，没想到还真的有这个插件。插件叫&lt;code&gt;hexo-
+      
+    
+    </summary>
+    
+    
+      <category term="建站" scheme="https://codemaster233.github.io/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+      <category term="教程" scheme="https://codemaster233.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="Hexo" scheme="https://codemaster233.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo博客提交谷歌收录</title>
-    <link href="http://yoursite.com/2020/02/25/seo/"/>
-    <id>http://yoursite.com/2020/02/25/seo/</id>
+    <link href="https://codemaster233.github.io/2020/02/25/seo/"/>
+    <id>https://codemaster233.github.io/2020/02/25/seo/</id>
     <published>2020-02-25T04:50:57.715Z</published>
     <updated>2020-02-25T05:19:30.988Z</updated>
     
@@ -37,17 +68,17 @@
     </summary>
     
     
-      <category term="建站" scheme="http://yoursite.com/categories/%E5%BB%BA%E7%AB%99/"/>
+      <category term="建站" scheme="https://codemaster233.github.io/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="https://codemaster233.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>git上传文件至Github出现问题Permission to xxx denied to xxx.</title>
-    <link href="http://yoursite.com/2020/02/24/git/"/>
-    <id>http://yoursite.com/2020/02/24/git/</id>
+    <link href="https://codemaster233.github.io/2020/02/24/git/"/>
+    <id>https://codemaster233.github.io/2020/02/24/git/</id>
     <published>2020-02-24T00:25:01.433Z</published>
     <updated>2020-02-24T01:52:28.604Z</updated>
     
@@ -64,17 +95,17 @@
     </summary>
     
     
-      <category term="github" scheme="http://yoursite.com/categories/github/"/>
+      <category term="github" scheme="https://codemaster233.github.io/categories/github/"/>
     
     
-      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="https://codemaster233.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2020/02/24/hello-world/"/>
-    <id>http://yoursite.com/2020/02/24/hello-world/</id>
+    <link href="https://codemaster233.github.io/2020/02/24/hello-world/"/>
+    <id>https://codemaster233.github.io/2020/02/24/hello-world/</id>
     <published>2020-02-23T23:47:27.878Z</published>
     <updated>2020-02-24T01:52:37.837Z</updated>
     
