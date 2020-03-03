@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://codemaster233.github.io/"/>
-  <updated>2020-03-02T09:18:44.941Z</updated>
+  <updated>2020-03-03T14:05:04.109Z</updated>
   <id>https://codemaster233.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GDindex+cloudfare Works+Google Drive搭建网盘</title>
+    <link href="https://codemaster233.github.io/2020/03/03/drive/"/>
+    <id>https://codemaster233.github.io/2020/03/03/drive/</id>
+    <published>2020-03-03T13:39:27.108Z</published>
+    <updated>2020-03-03T14:05:04.109Z</updated>
+    
+    <content type="html"><![CDATA[<p>Demo: <a href="https://pan.tdrew.workers.dev/" target="_blank" rel="noopener">https://pan.tdrew.workers.dev/</a><br>首先你需要有</p><ol><li>一个cloudfare的账号</li><li>一个谷歌账号</li><li>科学上网的能力</li></ol><p>我们首先生成代码<br>GDindex的GitHub地址：<a href="https://github.com/maple3142/GDIndex" target="_blank" rel="noopener">https://github.com/maple3142/GDIndex</a><br>打开GDindex的界面：<a href="https://gdindex-code-builder.glitch.me/" target="_blank" rel="noopener">https://gdindex-code-builder.glitch.me/</a><br><img src="https://i.loli.net/2020/03/03/cM7NQREfYCjzHtL.png" alt=""><br>首先我们需要<code>Get Authorization Code</code>，就是给它授权使它可以对你的Drive进行文件的访问删除添加。<br>点击<code>Click me</code>之后会让你登录谷歌账号，登陆就好了。把这里显示的代码复制起来<br><img src="https://i.loli.net/2020/03/03/sAK6kliebmHGhNp.png" alt="图片.png"><br>在<code>Authorization Code</code>中填入刚才复制的代码。<br>剩下的选项都不重要了，我们可以直接略过，点击最下面的<code>Get Code</code><br>稍等一会，就可以了<br><img src="https://i.loli.net/2020/03/03/MVNIeR97Jr2ujiC.png" alt="图片.png"><br>把这里的代码复制起来。<br>然后打开<code>cloudfare</code>找到<code>workers</code><br>如果你是第一次打开还会让你设置一个自定义的二级域名<br><img src="https://i.loli.net/2020/03/03/2rqhedgwI5yvKkU.png" alt="图片.png"><br>这里我们选择免费的套餐即可<br><img src="https://i.loli.net/2020/03/03/LCUJ9kTwFaisfvl.png" alt="图片.png"><br>然后如果你已经验证过了邮箱直接就可以了，如果你没有，就验证一下。会发一封邮件到你邮箱，点开里面的链接就好了，不再多说。<br>然后我们点击<code>Create a Worker</code><br><img src="https://i.loli.net/2020/03/03/VmsBSL6YFwHlcvP.png" alt="图片.png"><br>把你刚才在GDindex复制的代码粘贴到最右边的<code>Script</code>里面，里面原来的内容删除就行。<br><img src="https://i.loli.net/2020/03/03/9BbRT4i2Ikhyxv1.png" alt="图片.png"><br>然后点击<code>Save and Deploy</code><br>这里最前面的那个前缀还是可以改的先不慌<br><img src="https://i.loli.net/2020/03/03/Wq5Rrk4sgiCleLa.png" alt="图片.png"><br>然后你就可以访问自己的网盘了，直接点击Script上面的链接就可以跳转<br>点击这里可以改名字<br><img src="https://i.loli.net/2020/03/03/qk7WyGYgr8afEVO.png" alt="图片.png"><br>搭建完成效果<br><img src="https://i.loli.net/2020/03/03/LH1n8PtIDZpTybw.png" alt="图片.png"></p><p>这里再解释一下几个参数的作用</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">self.props &#x3D; &#123;</span><br><span class="line">title: &#39;GDIndex&#39;,       &#x2F;&#x2F;你的网盘名字</span><br><span class="line">default_root_id: &#39;root&#39;,   &#x2F;&#x2F;默认的目录</span><br><span class="line">client_id: &#39;202264815644.apps.googleusercontent.com&#39;,</span><br><span class="line">client_secret: &#39;X4Z3ca8xfWDb1Voo-F9a7ZxJ&#39;,</span><br><span class="line">refresh_token: &#39;1&#x2F;&#x2F;0dILHSgAhab4sCgYIARAAGA0SNwF-L9IruJqkPSXfDDZNZsrVIxHA3GzJ915mYGgWELrzyCsBhGYphN_ieqdOYCig0V5vP70Lla0&#39;,</span><br><span class="line">auth: false,  &#x2F;&#x2F;是否开启登录</span><br><span class="line">user: &#39;&#39;,  &#x2F;&#x2F;如果开启登陆的用户名</span><br><span class="line">pass: &#39;&#39;,  &#x2F;&#x2F;开启登陆的密码</span><br><span class="line">upload: false,  &#x2F;&#x2F; 是否开启上传</span><br><span class="line">lite: false   &#x2F;&#x2F; 是否开启精简模式</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Demo: &lt;a href=&quot;https://pan.tdrew.workers.dev/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.tdrew.workers.dev/&lt;/a&gt;&lt;br&gt;首先你需要有&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一
+      
+    
+    </summary>
+    
+    
+      <category term="建站" scheme="https://codemaster233.github.io/categories/%E5%BB%BA%E7%AB%99/"/>
+    
+    
+      <category term="教程" scheme="https://codemaster233.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>使用一言美化自己的博客</title>
